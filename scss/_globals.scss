@@ -1,0 +1,14 @@
+.center {
+  width: min(90%, 950px);
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background: none;
+  border: none;
+}
