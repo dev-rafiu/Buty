@@ -1,6 +1,22 @@
 .center {
-  width: min(90%, 950px);
+  width: min(90%, 1200px);
   margin: 0 auto;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
 }
 
 .flex {
@@ -11,4 +27,22 @@
 button {
   background: none;
   border: none;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1em;
 }

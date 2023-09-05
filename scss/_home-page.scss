@@ -1,0 +1,38 @@
+.home-page {
+  background-color: #303f9f;
+  text-align: center;
+  color: #fff;
+
+  .lead,
+  .intro-text {
+    max-width: 300px;
+    margin: 0 auto;
+
+    @media (min-width: 32em) {
+      max-width: 500px;
+    }
+  }
+
+  .intro-text {
+    margin-block: 1rem;
+  }
+
+  button {
+    background-color: #ff7d05;
+    color: inherit;
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: opacity 0.3s ease-in;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
