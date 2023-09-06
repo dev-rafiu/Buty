@@ -1,11 +1,37 @@
 .footer {
-  display: none;
+  font-size: 0.9rem;
+
+  h3 {
+    margin-bottom: 1rem;
+    color: #303f9f;
+  }
+
+  p {
+    color: #303f9f;
+  }
+
+  .socials--newsletter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    @media (min-width: 40em) {
+      & {
+        align-items: flex-end;
+        gap: 2rem;
+      }
+
+      p {
+        text-align: right;
+      }
+    }
+  }
+
   .center {
-    width: 100%;
+    padding: 3rem 0;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    border: 3px solid green;
 
     @media (max-width: 40em) {
       flex-direction: column;
@@ -16,15 +42,77 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+
+    a {
+      text-transform: capitalize;
+      // color: #303f9f;
+    }
   }
 
   .socials-list {
     gap: 1rem;
-    justify-content: space-center;
+
+    li {
+      width: 2rem;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      background-color: #303f9f;
+      display: grid;
+      place-content: center;
+      transition: all 0.25s ea;
+
+      &:hover {
+        background-color: hsl(232, 54%, 31%);
+      }
+
+      a {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 1rem;
+      }
+    }
   }
 
-  h3 {
-    // text-transform: capitalize;
-    margin-bottom: 0.5rem;
+  .form {
+    margin-top: 0.5rem;
+    min-width: 300px;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+
+    ::placeholder {
+      text-transform: capitalize;
+    }
+
+    input,
+    button {
+      padding: 0.6rem 0;
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      border-radius: 4px;
+    }
+
+    input {
+      flex: 1;
+      border: 1px solid #303f9f;
+
+      &:focus {
+        outline: 1px solid #303f9f;
+      }
+    }
+
+    button {
+      background-color: #303f9f;
+      padding: 0.6rem 1rem;
+      color: #fff;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+  }
+
+  .attribution {
+    text-align: center;
   }
 }
