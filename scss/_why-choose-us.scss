@@ -3,7 +3,7 @@
     width: 100%;
   }
 
-  @media (min-width: 32em) {
+  @media (min-width: 768px) {
     background-color: #303f9f;
   }
 
@@ -29,20 +29,21 @@
   }
 
   .cards {
-    place-content: center;
+    // border: 2px solid #ff7d05;
+    // max-width: 700px;
+    // margin: 0 auto;
     display: grid;
+    place-content: center;
     gap: 2rem;
     padding: 0 2rem;
     // display: none;
 
-    @media (min-width: 628px) {
-      grid-template-columns: repeat(2, 18rem);
-      transform: translateY(-8%);
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 22rem);
     }
 
-    @media (min-width: 900px) {
-      grid-template-columns: repeat(2, 25rem);
-      gap: 3rem;
+    @media (min-width: 768px) {
+      transform: translateY(-8%);
     }
 
     .card {
@@ -50,6 +51,7 @@
       border-radius: 5px;
       background-color: #fff;
       overflow: hidden;
+      max-width: 25rem;
 
       .card__text-content {
         padding: 1rem;
