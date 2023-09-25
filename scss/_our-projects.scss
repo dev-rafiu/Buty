@@ -1,0 +1,61 @@
+.our-projects {
+  background-color: #303f9f;
+  color: #fff;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .title {
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .projects {
+    display: grid;
+    gap: 1rem;
+
+    @media (min-width: 768px) {
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+        "p1 p1 p2 ."
+        ".  p3 p4 p4";
+
+      & .p1 {
+        grid-area: p1;
+      }
+
+      & .p2 {
+        grid-area: p2;
+      }
+
+      & .p3 {
+        grid-area: p3;
+      }
+
+      & .p4 {
+        grid-area: p4;
+      }
+    }
+  }
+
+  button {
+    background-color: #ff7d05;
+    color: inherit;
+    font-size: 0.9rem;
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: opacity 0.3s ease-in;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
