@@ -1,8 +1,4 @@
 .why-choose-us {
-  .center {
-    width: 100%;
-  }
-
   .arrow {
     width: 3rem;
     display: block;
@@ -11,6 +7,10 @@
 
   @media (min-width: 768px) {
     background-color: #303f9f;
+
+    .center {
+      width: 100%;
+    }
   }
 
   .title-container {
