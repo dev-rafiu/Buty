@@ -21,6 +21,7 @@ a {
 
 .title {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -52,4 +53,24 @@ h4 {
 
 p {
   font-size: 1em;
+}
+
+// components
+.btn-cta {
+  background-color: #ff7d05;
+  color: inherit;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.5rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: opacity 0.3s ease-in;
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
