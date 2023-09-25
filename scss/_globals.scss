@@ -68,6 +68,11 @@ p {
 
   transition: opacity 0.3s ease-in;
 
+  &:focus {
+    outline: 1px solid #fff;
+    outline-offset: 2px;
+  }
+
   @media (hover: hover) {
     &:hover {
       opacity: 0.8;
